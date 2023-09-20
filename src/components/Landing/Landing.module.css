@@ -1,0 +1,43 @@
+.landingSection{
+  padding: 13vh 0 0;
+}
+.landingSection>div{
+  padding: 0 !important;
+}
+
+.animatedText{
+ word-spacing: 3px; 
+ position: relative;
+}
+.animatedText span{
+  font-style: italic;
+  font-weight: 700;
+}
+.animatedText>div:last-child{
+  position: absolute;
+  right: 0;
+}
+.revealingCircle {
+  animation: reveal 2s ease-in-out forwards;
+}
+
+@media (max-width: 767px) {
+  .animatedText span{
+    font-size: 16px;
+  }
+  .animatedText{
+    margin: 20px auto 40px;
+  }
+}
+
+@keyframes reveal {
+  from {
+    stroke-dashoffset: 72;
+    /* The same as the initial stroke-dasharray */
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    /* Fully reveal the path */
+  }
+}
