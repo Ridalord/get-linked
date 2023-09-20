@@ -6,6 +6,16 @@
     /* Older Browsers */
     /* You can also include additional font weights and styles here if available */
 }
+@font-face {
+  font-family: 'Unica One';
+  /* You can name it whatever you like */
+  src: url('../../fonts/UnicaOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  /* You can name it whatever you like */
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
 
 .landingSection{
   padding: 13vh 0 0;
@@ -26,19 +36,18 @@
   position: absolute;
   right: 0;
 }
-.revealingCircle {
-  animation: reveal 2s ease-in-out forwards;
-}
 .mainIntro{
   width: 100%;
   text-align: center;
+  
+}
+.mainIntro>div:first-child{
+  flex-direction: column;
+  margin: auto;
   font-size: 32px;
   font-family: 'Clash Display Bold', sans-serif;
 }
-.mainIntro div{
-  flex-direction: column;
-  margin: auto;
-}
+
 .mainIntro>div>span:first-child{
   position: relative;
 }
@@ -48,13 +57,10 @@
 .chain,
 .bang,
 .bulb{
-  width: 33px;
-  height: 33px;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: -5px;
 }
 .chain{
   background-image: url(./chain.png);
@@ -65,8 +71,14 @@
 .bulb{
   background-image: url(./bulb.png);
   position: absolute;
-  top: -20px;
-  right: 35px;
+}
+.mainIntro>div:last-child {
+  font-family: 'Unica One', sans-serif;
+  line-height: 133%;
+  margin: 20px 19%;
+}
+.mainIntro>div:last-child>div>span {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -75,6 +87,30 @@
   }
   .animatedText{
     margin: 20px auto 50px;
+  }
+  .mainIntro>p {
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 12% 25px;
+    line-height: 166%;
+    letter-spacing: 1px;
+  }
+  .chain,
+  .bang,
+  .bulb {
+    width: 33px;
+    height: 33px;
+    margin-bottom: -5px;
+  }
+  .bulb{
+    top: -20px;
+    right: 85px;
+  }
+  .mainIntro>div:last-child {
+   font-size: 48px; 
+  }
+  .mainIntro>div:last-child>div>span{
+    font-size: 14px;
   }
 }
 

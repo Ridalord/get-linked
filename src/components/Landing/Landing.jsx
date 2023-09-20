@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Landing.module.css";
+import Button from "../Button/Button";
 
 export default function Landing() {
   const [typedText, setTypedText] = useState("");
@@ -43,6 +44,16 @@ export default function Landing() {
             <div className="d-flex">
               <span>getlinked Tech <span className={classes.bulb}></span></span>
               <span>Hackathon <span className={classes.version}>1.0</span><span className={classes.chain}></span><span className={classes.bang}></span></span>
+            </div>
+            <p>
+              Participate in getlinked tech Hackathon
+              2023 stand a chance to win a Big prize
+            </p>
+            <Button name="Register" />
+            <div className="time d-flex justify-content-between">
+              <div className="hour">00<span>H</span></div>
+              <div className="minute">00<span>M</span></div>
+              <div className="second">00<span>S</span></div>
             </div>
           </div>
         </div>
