@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('fonts/ClashDisplay-Light.woff') format('woff'),
+    url('fonts/ClashDisplay-Light.woff2') format('woff2'),
+    url('fonts/ClashDisplay-Medium.woff') format('woff'),
+    url('fonts/ClashDisplay-Medium.woff2') format('woff2'),
+    url('fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('fonts/ClashDisplay-Regular.woff2') format('woff2');
+  /* Older Browsers */
+  /* You can also include additional font weights and styles here if available */
+}
+:root {
+  --primary-color: #903aff;
+  /* Define your primary color */
+  --secondary-color: #d434fe;
+  /* Define your secondary color */
+  --text-color: #fff;
+  /* Define a text color */
+  --background-color: #150E28;
+  /* Define a background color */
+  --button-background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+}
+
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
+  font-family: 'Clash Display', sans-serif;
+}
+a{
+  color: var(--text-color) !important;
+}
+
