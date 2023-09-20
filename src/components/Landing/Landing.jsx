@@ -39,6 +39,12 @@ export default function Landing() {
               </svg>
             </div>
           </div>
+          <div className={classes.mainIntro}>
+            <div className="d-flex">
+              <span>getlinked Tech <span className={classes.bulb}></span></span>
+              <span>Hackathon <span className={classes.version}>1.0</span><span className={classes.chain}></span><span className={classes.bang}></span></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

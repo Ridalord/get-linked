@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Clash Display Bold';
+  src: url('../../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('../../fonts/ClashDisplay-Bold.woff') format('woff')
+    /* Older Browsers */
+    /* You can also include additional font weights and styles here if available */
+}
+
 .landingSection{
   padding: 13vh 0 0;
 }
@@ -20,13 +29,52 @@
 .revealingCircle {
   animation: reveal 2s ease-in-out forwards;
 }
+.mainIntro{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Clash Display Bold', sans-serif;
+}
+.mainIntro div{
+  flex-direction: column;
+  margin: auto;
+}
+.mainIntro>div>span:first-child{
+  position: relative;
+}
+.version{
+  color: var(--secondary-color);
+}
+.chain,
+.bang,
+.bulb{
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -5px;
+}
+.chain{
+  background-image: url(./chain.png);
+}
+.bang{
+  background-image: url(./bang.png);
+}
+.bulb{
+  background-image: url(./bulb.png);
+  position: absolute;
+  top: -20px;
+  right: 35px;
+}
 
 @media (max-width: 767px) {
   .animatedText span{
     font-size: 16px;
   }
   .animatedText{
-    margin: 20px auto 40px;
+    margin: 20px auto 50px;
   }
 }
 
