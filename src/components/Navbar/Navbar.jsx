@@ -2,12 +2,15 @@ import React from "react";
 import { Navbar, Nav } from 'react-bootstrap';
 import classes from "./Navbar.module.css"
 import Button from "../Button/Button";
+import Logo from "../Logo/Logo";
 
 
 export default function NavigationBar(){
   return (
-    <Navbar expand="lg" className={classes.background}>
-      <Navbar.Brand href="#home">My Website</Navbar.Brand>
+    <Navbar expand="lg" className={classes.navWrap}>
+      <Navbar.Brand href="#home">
+        <Logo/>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>

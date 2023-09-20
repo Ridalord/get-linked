@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Clash Display Bold';
+  src: url('../../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('../../fonts/ClashDisplay-Bold.woff') format('woff')
+  /* Older Browsers */
+  /* You can also include additional font weights and styles here if available */
+}
+
+.logo{
+  font-family: 'Clash Display Bold', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.linked{
+  color: var(--secondary-color);
+}
