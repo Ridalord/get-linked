@@ -28,6 +28,7 @@ body {
   background-color: var(--background-color) !important;
   color: var(--text-color);
   font-family: 'Clash Display', sans-serif;
+  overflow-x: hidden;
 }
 a{
   color: var(--text-color) !important;

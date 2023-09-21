@@ -28,7 +28,7 @@ export default function Landing() {
   return (
     <section className={classes.landingSection}>
       <div className="container">
-        <div className={`${classes.intro} d-grid justify-content-center`}>
+        <div className={`${classes.intro} d-grid`}>
           <div className={`col-sm-12 ${classes.animatedText}`}>
             <div className={classes.typingAnimation}>
               <span>{typedText}</span>
@@ -40,7 +40,7 @@ export default function Landing() {
               </svg>
             </div>
           </div>
-          <div className={classes.mainIntro}>
+          <div className={`${classes.mainIntro} col-lg-10`}>
             <div className="d-flex">
               <span>getlinked Tech <span className={classes.bulb}></span></span>
               <span>Hackathon <span className={classes.version}>1.0</span><span className={classes.chain}></span><span className={classes.bang}></span></span>
@@ -56,7 +56,7 @@ export default function Landing() {
               <div className="second">00<span>S</span></div>
             </div>
           </div>
-          <div className={`${classes.landingImage1} col-sm-12`}>
+          <div className={`${classes.landingImage1} col-sm-12 col-lg-3`}>
             <div className={classes.landingImage2}></div>
           </div>
         </div>
