@@ -56,6 +56,9 @@ export default function Landing() {
               <div className="second">00<span>S</span></div>
             </div>
           </div>
+          <div className={`${classes.landingImage1} col-sm-12`}>
+            <div className={classes.landingImage2}></div>
+          </div>
         </div>
       </div>
     </section>

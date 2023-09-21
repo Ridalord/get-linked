@@ -80,6 +80,21 @@
 .mainIntro>div:last-child>div>span {
   font-family: 'Montserrat', sans-serif;
 }
+.landingImage1,
+.landingImage2{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.landingImage1{
+  position: relative;
+  background-image: url(./landingImage1.png);
+}
+.landingImage2{
+  position: absolute;
+  background-image: url(./landingImage2.png);
+  width: 95%;
+}
 
 @media (max-width: 767px) {
   .animatedText span{
@@ -111,6 +126,12 @@
   }
   .mainIntro>div:last-child>div>span{
     font-size: 14px;
+  }
+  .landingImage1{
+    height: 45vh;
+  }
+  .landingImage2{
+    height: 40vh;
   }
 }
 
