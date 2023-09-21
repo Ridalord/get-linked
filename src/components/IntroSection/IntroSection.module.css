@@ -1,4 +1,10 @@
 .text{
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 27.5px;
+}
+@media (max-width: 767px) {
+  .text{
+    font-size: 14px;
+  }
 }
