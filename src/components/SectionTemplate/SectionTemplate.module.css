@@ -1,14 +1,46 @@
-
-
+@font-face {
+  font-family: 'Clash Display Bold';
+  src: url('../../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('../../fonts/ClashDisplay-Bold.woff') format('woff')
+}
+.sectionWrap{
+  padding: 30px 0;
+  row-gap: 40px;
+}
 .coloredHeader{
-  color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.sectionImage{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.sectionHeading{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Clash Display Bold', sans-serif;
+  line-height: normal;
+  word-spacing: 2px;
 }
 
 @media (max-width: 767px) {
   .sectionWrap{
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   .sectionHeading{
     font-size: 20px;
+    font-weight: 700;
+  }
+  .sectionImage{
+    width: 257px;
+    height: 257px;
+    margin: 0 auto;
+  }
+  .sectionContent{
+    width: 80%;
+    margin: 10px auto;
   }
 }

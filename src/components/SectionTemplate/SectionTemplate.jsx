@@ -3,8 +3,8 @@ import classes from "./SectionTemplate.module.css"
 
 export default function SectionTemplate(props) {
   return (
-    <section className={`${classes.sectionWrap} d-flex`}>
-      <div className={classes.sectionImage} style={{ backgroundImage: `url(${props.sectionImage})` }}></div>
+    <section className={`${classes.sectionWrap} d-flex ${props.reversed && "flex-row-reverse"}`}>
+      <div className={classes.sectionImage} style={{ backgroundImage: `url(${props.sectionImage})`}}></div>
       <div className={classes.sectionDetails}>
         <div className={classes.sectionHeading}>
           <span>{props.topHeader}</span>

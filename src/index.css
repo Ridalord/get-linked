@@ -3,14 +3,17 @@
   src: url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
     /* Modern Browsers */
     url('fonts/ClashDisplay-Regular.woff') format('woff'),
-    url('fonts/ClashDisplay-Light.woff') format('woff'),
-    url('fonts/ClashDisplay-Light.woff2') format('woff2'),
-    url('fonts/ClashDisplay-Medium.woff') format('woff'),
-    url('fonts/ClashDisplay-Medium.woff2') format('woff2'),
-    url('fonts/ClashDisplay-Regular.woff') format('woff'),
-    url('fonts/ClashDisplay-Regular.woff2') format('woff2');
   /* Older Browsers */
   /* You can also include additional font weights and styles here if available */
+}
+@font-face {
+  font-family: 'Clash Display Bold';
+  src: url('fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('fonts/ClashDisplay-Bold.woff') format('woff')
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 :root {
   --primary-color: #903aff;
