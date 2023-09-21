@@ -36,7 +36,7 @@
 
 @media (max-width: 767px) {
   .sectionWrap{
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     text-align: center;
     padding: 30px 0;
