@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import CriteriaSection from './components/CriteriaSection/CriteriaSection';
 import Guidelinesection from './components/GuidelineSection/GuidelineSection';
 import IntroSection from './components/IntroSection/IntroSection';
 import Landing from './components/Landing/Landing';
@@ -11,7 +12,8 @@ function App() {
       <NavigationBar />
       <Landing />
       <IntroSection />
-      <Guidelinesection/>
+      <Guidelinesection />
+      <CriteriaSection/>
     </div>
   );
 }

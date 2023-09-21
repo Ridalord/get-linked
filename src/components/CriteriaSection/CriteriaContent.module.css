@@ -1,0 +1,21 @@
+.textHeader {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 173.5%;
+}
+.text{
+  font-size: 14px;
+}
+.button{
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .textHeader {
+    font-size: 13px;
+  }
+  .text{
+    font-size: 12px;
+  }
+}
+
