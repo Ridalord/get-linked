@@ -1,0 +1,14 @@
+
+
+.coloredHeader{
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .sectionWrap{
+    flex-direction: column;
+  }
+  .sectionHeading{
+    font-size: 20px;
+  }
+}
