@@ -1,0 +1,28 @@
+.accordionWrap{
+  background: var(--background-color) !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--secondary-color) !important;
+  font-family: 'Monteserrat', sans-serif !important;
+}
+.faqImage{
+  width: 55vw;
+}
+.panelHeader{
+  padding: 0 !important;
+  color: var(--text-color) !important;
+  border: none !important;
+  width: 100% !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.panelHeader p{
+  font-size: 14px !important;
+}
+.accordionIcon{
+  color: var(--secondary-color);
+  font-size: 20px !important;
+}
+.accordionContent{
+  color: var(--text-color);
+  padding: 0 0 5px !important;
+}
