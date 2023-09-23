@@ -6,6 +6,7 @@ import Guidelinesection from './components/GuidelineSection/GuidelineSection';
 import IntroSection from './components/IntroSection/IntroSection';
 import Landing from './components/Landing/Landing';
 import NavigationBar from './components/Navbar/Navbar';
+import TimelineSection from './components/TimelineSection/TimelineSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Guidelinesection />
       <CriteriaSection />
       <FaqSection/>
+      <TimelineSection/>
     </div>
   );
 }
