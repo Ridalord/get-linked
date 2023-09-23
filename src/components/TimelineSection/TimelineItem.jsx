@@ -4,7 +4,7 @@ import classes from "./TimelineSection.module.css"
 
 export default function TimelineItem(props) {
   return (
-    <div className={classes.itemWrap}>
+    <div className={`${classes.itemWrap} ${props.className || ""}`}>
       <div>
         <h4>{props.header}</h4>
         <p>{props.text}</p>

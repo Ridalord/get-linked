@@ -1,10 +1,24 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import classes from "../SectionTemplate/SectionTemplate.module.css"
 import styles from "./TimelineSection.module.css"
 import TimelineItem from "./TimelineItem";
 
 
 export default function TimelineSection(props) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWindowWidth = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkWindowWidth();
+    window.addEventListener("resize", checkWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize", checkWindowWidth);
+    };
+  }, []);
   const timelineContents = [
     {
       id: 1,
@@ -63,6 +77,7 @@ export default function TimelineSection(props) {
             date={item.date}
             text={item.text}
             index={item.id}
+            className={(parseInt(item.id)%2 === 0) && !isMobile ? styles.switchDate : ""}
           />
         ))}
       </div>
