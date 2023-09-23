@@ -17,12 +17,38 @@
 }
 .panelHeader p{
   font-size: 14px !important;
+  font-family: 'Monteserrat', sans-serif;
 }
 .accordionIcon{
   color: var(--secondary-color);
   font-size: 20px !important;
+  align-self: baseline !important;
 }
 .accordionContent{
   color: var(--text-color);
   padding: 0 0 5px !important;
+  font-family: 'Monteserrat', sans-serif;
+}
+.accordionContent p{
+  font-size: 14px !important;
+  font-family: 'Monteserrat', sans-serif;
+}
+.text{
+  font-family: 'Monteserrat', sans-serif;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .text{
+    font-size: 12px;
+    line-height: 229.167%;
+  }
+  .panelHeader p{
+    text-align: left;
+    line-height: 150%;
+    font-size: 12px !important;
+  }
+  .accordionContent p{
+    text-align: left !important;
+  }
 }
