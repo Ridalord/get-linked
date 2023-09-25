@@ -31,35 +31,30 @@ export default function TimelineSection(props) {
       header: "Teams Registration begins",
       date: "November 18, 2023",
       text: "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register"
-
     },
     {
       id: 3,
       header: "Teams Registration ends",
       date: "November 18, 2023",
       text: "Interested Participants are no longer Allowed to register"
-
     },
     {
       id: 4,
       header: "Announcement of the accepted teams and ideas",
       date: "November 18, 2023",
       text: "All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced"
-
     },
     {
       id: 5,
       header: "Getlinked Hackathon 1.0 Offically Begins",
       date: "November 18, 2023",
       text: "Accepted teams can now proceed to build their ground breaking skill driven solutions"
-
     },
     {
       id: 6,
       header: "Demo Day",
       date: "November 18, 2023",
       text: "Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day"
-
     }
   ]
   return (
