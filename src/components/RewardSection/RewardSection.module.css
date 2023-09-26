@@ -1,6 +1,8 @@
 .rewardSection{
   padding-right: 5%;
   padding-left: 5%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .header{
   width: 43%;
@@ -48,6 +50,10 @@
   position: absolute;
   transform: translateY(-60%);
 }
+.firstWrap{
+  border: 1px solid var(--primary-color);
+  background: rgba(144, 58, 255, 0.12);
+}
 .firstWrap>.prizeMedal{
   width: 296px;
   height: 296px;
@@ -75,4 +81,59 @@
   font-style: normal;
   font-weight: 700;
   line-height: 216.4%;
+}
+
+@media (max-width: 767px) {
+  .rewardSection {
+    /* justify-content: center; */
+    align-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .header {
+   width: 100%; 
+  }
+  .header p{
+    width: 90%;
+    margin:  0 auto;
+  }
+  .prizesWrap{
+    flex-direction: column;
+  }
+  .prizeWrap{
+    height: 126px;
+    padding: 0px 20px;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .prizeMedal{
+    width: 76px;
+    height: 76px;
+  }
+  .prizePosition{
+    font-size: 12px;
+  }
+  .prizePosition>span:first-child {
+    font-size: 12px;
+  }
+  .prizeWrap h4 {
+   font-size: 14px; 
+  }
+  .prizesContainer {
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+  .firstWrap>.prizeMedal {
+    width: 126px;
+    height: 126px; 
+    transform: translateY(-65%);
+  }
+  .trophyWrap {
+   width: 100%;
+   /* background-size: contain;  */
+    width: 321px;
+    height: 282px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
