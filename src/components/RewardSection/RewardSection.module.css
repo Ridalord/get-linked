@@ -1,0 +1,78 @@
+.rewardSection{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.header{
+  width: 43%;
+  margin-left: auto;
+}
+.trophyWrap{
+  width: 548px;
+  height: 482px;
+  background-image: url("./rewardImage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prizesContainer{
+  margin-top: 6vh;
+  column-gap: 30px;
+}
+.prizesWrap{
+  width: 100%;
+}
+.prizeWrap{
+  /* width: 212px; */
+  height: 296px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background: rgba(212, 52, 254, 0.12);
+  flex-direction: column;
+  align-items: center;
+  padding: 33px 25px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 25px;
+  /* justify-content: space-between; */
+}
+.firstWrap{
+  margin-bottom: 0;
+}
+.prizeMedal{
+  width: 179px;
+  height: 180px;
+  background-image: url("./secondRunner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  transform: translateY(-60%);
+}
+.firstWrap>.prizeMedal{
+  width: 296px;
+  height: 296px;
+  transform: translateY(-80%);
+}
+.prizePosition{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 216.4%; */
+  line-height: normal;
+  margin-top: auto;
+}
+.prizePosition>span:first-child{
+  font-size: 36px;
+}
+.prizeWrap h4{
+  color: var(--secondary-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 216.4%;
+}
