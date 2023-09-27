@@ -7,6 +7,7 @@ import IntroSection from './components/IntroSection/IntroSection';
 import Landing from './components/Landing/Landing';
 import NavigationBar from './components/Navbar/Navbar';
 import RewardSection from './components/RewardSection/RewardSection';
+import SponsorSection from './components/SponsorSection/SponsorSection';
 import TimelineSection from './components/TimelineSection/TimelineSection';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <CriteriaSection />
       <FaqSection/>
       <TimelineSection />
-      <RewardSection/>
+      <RewardSection />
+      <SponsorSection/>
     </div>
   );
 }

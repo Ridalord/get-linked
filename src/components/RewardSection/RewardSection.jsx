@@ -2,8 +2,6 @@ import React from "react";
 import PrizesTemplate from "./prizesTemplate";
 import sectionStyle from "../SectionTemplate/SectionTemplate.module.css"
 import textStyle from "../FaqSection/FaqContent.module.css"
-// import SectionTemplate from "../SectionTemplate/SectionTemplate"
-// import RewardContent from "./RewardContent";
 import classes from "./RewardSection.module.css"
 
 
