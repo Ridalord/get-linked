@@ -13,24 +13,24 @@ export default function SponsorSection() {
           companies as its partners and sponsors</p>
       </div>
       <div className={`${classes.sponsorContainer} d-flex justify-content-center`}>
-        <div className={`${classes.liberty} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.liberty} ${classes.sponsor} col-4`}>
           <div></div>
         </div>
-        <div className={`${classes.libertyPay} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.libertyPay} ${classes.sponsor} col-4`}>
           <div></div>
           <div className={`${classes.centerMargin} ${classes.right}`}></div>
           <div className={`${classes.centerMargin} ${classes.left}`}></div>
         </div>
-        <div className={`${classes.winWise} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.winWise} ${classes.sponsor} col-4`}>
           <div></div>
         </div>
-        <div className={`${classes.whishSpersms} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.whishSpersms} ${classes.sponsor} col-4`}>
           <div></div>
         </div>
-        <div className={`${classes.paybox} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.paybox} ${classes.sponsor} col-4`}>
           <div></div>
         </div>
-        <div className={`${classes.vusualPlus} ${classes.sponsor} col-sm-4`}>
+        <div className={`${classes.vusualPlus} ${classes.sponsor} col-4`}>
           <div></div>
         </div>
       </div>

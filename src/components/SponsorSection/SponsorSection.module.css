@@ -1,6 +1,5 @@
 .sponsorWrap{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 8% 5%;
 }
 .sponsorContainer{
   min-height: 5vh;
@@ -24,28 +23,28 @@
   background-repeat: no-repeat;
 }
 .liberty{
-  border-top: none;
-  border-left: none;
+  border-top: none !important;
+  border-left: none !important;
 }
 .liberty>div{
   background-image: url('./liberty.png');
 }
 .libertyPay{
-  border-top: none;
+  border-top: none !important;
 }
 .libertyPay>div{
   background-image: url('./libertyPay.png');
 }
 .winWise{
-  border-right: none;
-  border-top: none;
+  border-right: none !important;
+  border-top: none !important;
 }
 .winWise>div{
   background-image: url('./winWise.png');
 }
 .whishSpersms{
-  border-left: none;
-  border-bottom: none;
+  border-left: none !important;
+  border-bottom: none !important;
   padding-top: 23px;
   padding-bottom: 0;
 }
@@ -53,7 +52,7 @@
   background-image: url('./whishspersms.png');
 }
 .paybox{
-  border-bottom: none;
+  border-bottom: none !important;
   padding-top: 23px;
   padding-bottom: 0;
 }
@@ -61,8 +60,8 @@
   background-image: url('./Paybox.png');
 }
 .vusualPlus{
-  border-bottom: none;
-  border-right: none;
+  border-bottom: none !important;
+  border-right: none !important;
   padding-top: 23px;
   padding-bottom: 0;
 }
@@ -84,4 +83,28 @@
 }
 .left{
   left: -14%;
+}
+
+@media (max-width: 767px) {
+  .sponsorWrap {
+    padding: 10% 5%;
+  }
+  .sponsorContainer {
+    padding: 10% 15%;
+    position: relative;
+  }
+  .sponsor{
+    height: 37px;
+    padding: 0 20px 15px;
+    border: 1px solid var(--secondary-color);
+  }
+  .centerMargin{
+    width: 15px;
+    height: 12px;
+  }
+  .vusualPlus,
+  .paybox,
+  .whishSpersms{
+    padding: 15px 20px 0;
+  }
 }
