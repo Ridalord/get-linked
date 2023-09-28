@@ -70,3 +70,40 @@
   justify-self: center;
   margin: 0 auto;
 }
+
+@media (max-width: 767px){
+  .policySection{
+    flex-direction: column-reverse !important;
+    padding: 60px 5%;
+  }
+  .privacyBackdrop{
+    top: 130vh;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0 auto;
+  }
+  .privacyBackdrop>svg{
+    width: 70vw;
+  }
+  .policySection>div:last-child {
+    width: 100vw;
+  }
+  .contentWrap>p:nth-child(2) {
+    width: 100%;
+  }
+  .licensingWrap{
+    padding: 45px 15px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .policySection>div:first-child {
+    background-size: contain;
+    height: 350px;
+  }
+  .policySection>div:first-child{
+    width: 150%;
+    margin-top: 140px;
+    position: relative;
+    left: -80px;
+  }
+}
