@@ -6,6 +6,7 @@ import Guidelinesection from './components/GuidelineSection/GuidelineSection';
 import IntroSection from './components/IntroSection/IntroSection';
 import Landing from './components/Landing/Landing';
 import NavigationBar from './components/Navbar/Navbar';
+import PolicySection from './components/PolicySection/PolicySection';
 import RewardSection from './components/RewardSection/RewardSection';
 import SponsorSection from './components/SponsorSection/SponsorSection';
 import TimelineSection from './components/TimelineSection/TimelineSection';
@@ -21,7 +22,8 @@ function App() {
       <FaqSection/>
       <TimelineSection />
       <RewardSection />
-      <SponsorSection/>
+      <SponsorSection />
+      <PolicySection/>
     </div>
   );
 }
