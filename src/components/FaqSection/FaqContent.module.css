@@ -51,4 +51,7 @@
   .accordionContent p{
     text-align: left !important;
   }
+  .faqSection{
+    flex-direction: column-reverse !important;
+  }
 }

@@ -1,9 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import classes from "./FaqContent.module.css"
-// import Accordion from "react-bootstrap/Accordion";
-// import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
+
 
 export default function FaqContent() {
   return (
@@ -13,20 +11,6 @@ export default function FaqContent() {
         want to ask about getlinked Hackathon 1.0
       </p>
       <Accordion/>
-      {/* <Accordion defaultActiveKey="0">
-        <Card>
-          <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="0">
-              Accordion Item #1
-            </Accordion.Toggle>
-          </Card.Header>
-          <Accordion.Collapse eventKey="0">
-            <Card.Body>
-              Content for Accordion Item #1 goes here.
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-      </Accordion> */}
     </div>
   )
 }
