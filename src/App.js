@@ -2,6 +2,7 @@
 import './App.css';
 import CriteriaSection from './components/CriteriaSection/CriteriaSection';
 import FaqSection from './components/FaqSection/FaqSection';
+import Footer from './components/Footer/Footer';
 import Guidelinesection from './components/GuidelineSection/GuidelineSection';
 import IntroSection from './components/IntroSection/IntroSection';
 import Landing from './components/Landing/Landing';
@@ -23,7 +24,8 @@ function App() {
       <TimelineSection />
       <RewardSection />
       <SponsorSection />
-      <PolicySection/>
+      <PolicySection />
+      <Footer/>
     </div>
   );
 }
