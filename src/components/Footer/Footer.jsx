@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className={`${classes.footer} d-flex justify-content-between`}>
       <div className="col-sm-12 col-lg-5 d-flex justify-content-between">
         <div>
-          <Logo />
+          <Logo className={classes.footerLogo} />
           <p className={classes.logoSub}>Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology.</p>
         </div>
         <div className={classes.termsPolicy}>
