@@ -3,6 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import classes from "./Navbar.module.css"
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
+// import { Link } from "react-router-dom";
 
 const ToggleIcons = {
   default: (
@@ -53,7 +54,7 @@ export default function NavigationBar() {
   ));
   return (
     <Navbar expand="lg" className={classes.navWrap}>
-      <Navbar.Brand href="#home" style={{ visibility: isLogoVisible ? 'visible' : 'hidden' }}>
+      <Navbar.Brand href="/" style={{ visibility: isLogoVisible ? 'visible' : 'hidden' }}>
         <Logo/>
       </Navbar.Brand>
       <Navbar.Toggle as={CustomToggle} onClick={handleToggleClick} aria-controls="basic-navbar-nav">
@@ -62,7 +63,7 @@ export default function NavigationBar() {
         
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className={classes.navItemWrap}>
-          <Nav.Link href="#home">Timeline</Nav.Link>
+          <Nav.Link href="/register">Timeline</Nav.Link>
           <Nav.Link href="#about">Overview</Nav.Link>
           <Nav.Link href="#services">FAQs</Nav.Link>
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -73,7 +74,7 @@ export default function NavigationBar() {
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown> */}
           <Nav.Link href="#contact">Contact</Nav.Link>
-          <Nav.Link href="register"><Button name="Register"/></Nav.Link>
+          <Nav.Link href="register"><Button name="Register" location="register"/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

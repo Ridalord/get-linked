@@ -12,23 +12,33 @@ import NavigationBar from './components/Navbar/Navbar';
 // import RewardSection from './components/RewardSection/RewardSection';
 // import SponsorSection from './components/SponsorSection/SponsorSection';
 // import TimelineSection from './components/TimelineSection/TimelineSection';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Routes } from 'react-router-dom';
+import Register from './components/Register/Register';
+
 
 function App() {
   return (
-    <div className="App">
-      <NavigationBar />
-      {/* <Landing />
-      <IntroSection />
-      <Guidelinesection />
-      <CriteriaSection />
-      <FaqSection/>
-      <TimelineSection />
-      <RewardSection />
-      <SponsorSection />
-      <PolicySection /> */}
-      <Home/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <NavigationBar />
+        {/* <Landing />
+        <IntroSection />
+        <Guidelinesection />
+        <CriteriaSection />
+        <FaqSection/>
+        <TimelineSection />
+        <RewardSection />
+        <SponsorSection />
+        <PolicySection /> */}
+        <Routes>
+          <Route path='/' exact Component={Home} />
+          {/* <Home/> */}
+            <Route path='/register' Component={Register} />
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
