@@ -31,11 +31,13 @@ function App() {
         <RewardSection />
         <SponsorSection />
         <PolicySection /> */}
-        <Routes>
-          <Route path='/' exact Component={Home} />
-          {/* <Home/> */}
-            <Route path='/register' Component={Register} />
-        </Routes>
+        <div className='wrap'>
+          <Routes>
+            <Route path='/' exact Component={Home} />
+            {/* <Home/> */}
+              <Route path='/register' Component={Register} />
+          </Routes>
+        </div>
         <Footer/>
       </div>
     </Router>
