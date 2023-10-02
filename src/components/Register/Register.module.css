@@ -99,45 +99,19 @@
   align-items: center;
   gap: 8px;
   /* Adjust the gap between the checkbox and text as needed */
-  font-size: 14px;
+  font-size: 12px;
   /* Set the font size for the text */
 }
 
 /* Style the checkbox input */
-.checkbox input[type="checkbox"] {
-  width: 14px;
-  /* Set width to 14px */
-  height: 14px;
-  /* Set height to 14px */
-  background: transparent;
-  /* Set background to transparent */
-  margin: auto 0;
-  /* Remove any default margin */
-  appearance: none;
-  /* Remove default browser styles */
-}
+
 
 /* Style the custom checkbox */
-.checkbox input[type="checkbox"]::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  /* Set width to 14px */
-  height: 14px;
-  /* Set height to 14px */
-  border: 2px solid #FE34B9;
-  /* Set border color to #FE34B9 */
-  border-radius: 3px;
-  /* Add some border radius for rounded corners */
-  margin-right: 8px;
-  /* Adjust the spacing between the checkbox and text */
-  vertical-align: middle;
-  /* Align the checkbox vertically with the text */
-}
+
 
 /* Style the checkbox label text */
 .checkbox label {
-  color: #333;
+  color: var(--text-color);
   /* Set text color */
 }
 
@@ -147,4 +121,10 @@
   /* Set background color when checked */
   color: #FE34B9;
   /* Set border color when checked */
+}
+.regImage{
+  background-image: url('./regImage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

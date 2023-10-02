@@ -33,12 +33,12 @@ export default function Register() {
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    const newValue = type === "checkbox" ? checked : value;
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? !formData.check : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -64,11 +64,22 @@ export default function Register() {
     })
       .then(response => response.text())
       .then(result => {
-        console.log(result);
+        // console.log(result);
         // Handle success or any additional actions here
+        alert('succes')
+        setFormData({
+          teamName: "",
+          phone: "",
+          email: "",
+          projectTopic: "",
+          category: "",
+          groupSize: "",
+          check: false,
+        });
       })
       .catch(error => {
         console.log('error', error);
+        alert('Error')
         // Handle errors here
       });
   };

@@ -26,6 +26,9 @@
   /* Define a background color */
   --button-background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
 }
+*{
+  box-sizing: border-box !important;
+}
 
 body {
   background-color: var(--background-color) !important;
@@ -38,7 +41,7 @@ a{
   text-decoration: none !important;
 }
 a:hover{
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
   transition: all .5s ease-in-out;
 }
 ul{
