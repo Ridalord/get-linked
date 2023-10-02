@@ -155,4 +155,10 @@
   .formInput>select>option {
     font-size: 13px !important;
   }
+  .category{
+    width: 60% !important;
+  }
+  .groupSize{
+    width: 34% !important;
+  }
 }

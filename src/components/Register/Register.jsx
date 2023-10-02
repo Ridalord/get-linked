@@ -15,7 +15,7 @@ export default function Register() {
     check: false,
   });
   // console.log(formData)
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const openModal = () => {
     setShowModal(true);
@@ -121,7 +121,7 @@ export default function Register() {
           <label htmlFor="projectTopic" className={`${classes.formInput} col-lg-5 col-sm-12`}>Project Topic
             <input type="text" name="projectTopic" id="projectTopic" placeholder="What is your group project topic" required value={formData.projectTopic} onChange={handleInputChange}/>
           </label>
-          <label htmlFor="category" className={`${classes.formInput} col-lg-5 col-sm-12`}>Category
+          <label htmlFor="category" className={`${classes.formInput} ${classes.category} col-lg-5 col-sm-6`}>Category
             <select name="category" id="category" defaultValue={formData.category} required onChange={handleInputChange}>
               <option value="" selected>Select your category</option>
               {categories.map(category => (
@@ -131,7 +131,7 @@ export default function Register() {
               ))}
             </select>
           </label>
-          <label htmlFor="category" className={`${classes.formInput} col-lg-5 col-sm-12`}>Group Size
+          <label htmlFor="groupSize" className={`${classes.formInput} ${classes.groupSize} col-lg-5 col-sm-4`}>Group Size
             {/* <input type="text" name="projectTopic" id="projectTopic" placeholder="What is your group project topic" /> */}
             <select name="groupSize" id="groupSize" defaultValue={formData.groupSize} required onChange={handleInputChange}>
               <option value="" selected> Selected</option>
