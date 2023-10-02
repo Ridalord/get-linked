@@ -6,6 +6,7 @@
   border: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  transition: all 1s ease-in-out !important;
 }
 .button:hover{
   background: var(--background-color) !important;

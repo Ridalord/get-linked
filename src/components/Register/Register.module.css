@@ -103,11 +103,6 @@
   /* Set the font size for the text */
 }
 
-/* Style the checkbox input */
-
-
-/* Style the custom checkbox */
-
 
 /* Style the checkbox label text */
 .checkbox label {
@@ -127,4 +122,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .regWrap {
+    padding: 25vh 5vw 5vw;
+    flex-direction: column !important;
+  }
+  .regImage{
+    height: 40vh;
+    background-size: contain;
+  }
+  .formContainer{
+    padding: 0 20px 20px;
+    background: none;
+  }
+  .formInput{
+    width: 100%;
+  }
+  .formInput>input,
+  .formInput>select {
+    width: 100% !important;
+  }
+  .formContainer>h2 {
+    position: absolute;
+    top: 15vh;
+    font-size: 15px;
+  }
+  .formContainer>h2 {
+   font-size: 20px; 
+  }
+  .formInput>select>option {
+    font-size: 13px !important;
+  }
 }
