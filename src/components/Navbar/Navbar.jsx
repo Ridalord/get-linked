@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import classes from "./Navbar.module.css"
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ToggleIcons = {
   default: (
@@ -63,18 +63,11 @@ export default function NavigationBar() {
         
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className={classes.navItemWrap}>
-          <Nav.Link href="/register">Timeline</Nav.Link>
-          <Nav.Link href="#about">Overview</Nav.Link>
-          <Nav.Link href="#services">FAQs</Nav.Link>
-          {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown> */}
-          <Nav.Link href="#contact">Contact</Nav.Link>
-          <Nav.Link href="register"><Button name="Register" location="register"/></Nav.Link>
+          <Link to="/register">Timeline</Link>
+          <Link to="/about">Overview</Link>
+          <Link to="/services">FAQs</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/register"><Button name="Register" location="register"/></Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
