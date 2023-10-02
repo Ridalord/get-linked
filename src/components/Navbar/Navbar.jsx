@@ -32,7 +32,7 @@ const ToggleIcons = {
     </div>
   )
 };
-console.log(ToggleIcons.default)
+// console.log(ToggleIcons.default)
 export default function NavigationBar() {
   const [isLogoVisible, setLogoVisible] = useState(true);
   const [toggleIcon, setToggleIcon] = useState("default");

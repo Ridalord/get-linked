@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Button(props) {
   return (
-    <button className={`${classes.button} ${props.className}`}>
+    <button className={`${classes.button} ${props.className}`} onClick={props.onClick}>
       <Link to={props.location}>
         {props.name}
       </Link>

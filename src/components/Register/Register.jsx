@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Register.module.css";
 import Button from "../Button/Button";
+import ModalPop from "../Modal/Modal";
 
 export default function Register() {
   const [categories, setCategories] = useState([]);
@@ -13,7 +14,16 @@ export default function Register() {
     groupSize: "",
     check: false,
   });
-  console.log(formData)
+  // console.log(formData)
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
     var myHeaders = new Headers();
@@ -66,7 +76,7 @@ export default function Register() {
       .then(result => {
         // console.log(result);
         // Handle success or any additional actions here
-        alert('succes')
+        // alert('succes')
         setFormData({
           teamName: "",
           phone: "",
@@ -76,10 +86,11 @@ export default function Register() {
           groupSize: "",
           check: false,
         });
+        openModal();
       })
       .catch(error => {
-        console.log('error', error);
-        alert('Error')
+        // console.log('error', error);
+        alert(error)
         // Handle errors here
       });
   };
@@ -111,7 +122,7 @@ export default function Register() {
             <input type="text" name="projectTopic" id="projectTopic" placeholder="What is your group project topic" required value={formData.projectTopic} onChange={handleInputChange}/>
           </label>
           <label htmlFor="category" className={`${classes.formInput} col-lg-5 col-sm-12`}>Category
-            <select name="category" id="category" defaultValue={'Select your category'} required value={formData.category} onChange={handleInputChange}>
+            <select name="category" id="category" defaultValue={formData.category} required onChange={handleInputChange}>
               <option value="" selected>Select your category</option>
               {categories.map(category => (
                 <option key={category.id} value={category.id}>
@@ -122,7 +133,7 @@ export default function Register() {
           </label>
           <label htmlFor="category" className={`${classes.formInput} col-lg-5 col-sm-12`}>Group Size
             {/* <input type="text" name="projectTopic" id="projectTopic" placeholder="What is your group project topic" /> */}
-            <select name="groupSize" id="groupSize" defaultValue={"Select"} required value={formData.groupSize} onChange={handleInputChange}>
+            <select name="groupSize" id="groupSize" defaultValue={formData.groupSize} required onChange={handleInputChange}>
               <option value="" selected> Selected</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -137,6 +148,7 @@ export default function Register() {
           <Button name="Register Now" className={`col-12`} />
         </form>
       </div>
+      <ModalPop showModal={showModal} closeModal={closeModal} />
     </div>
   )
 }
