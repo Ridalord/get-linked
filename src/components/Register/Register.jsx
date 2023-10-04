@@ -14,8 +14,7 @@ export default function Register() {
     groupSize: "",
     check: false,
   });
-  // console.log(formData)
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
     setShowModal(true);
