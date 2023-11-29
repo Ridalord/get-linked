@@ -19,6 +19,7 @@ function App() {
             <Route path='/register' Component={Register} />
             <Route path='/contact' Component={Contact}/>
           </Routes>
+          <Home/>
         </div>
         <Footer/>
       </div>
