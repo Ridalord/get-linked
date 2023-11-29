@@ -67,7 +67,7 @@ export default function Footer() {
           <a href="#tel">+234 6707653444</a>
         </li>
         <li>
-          <a href="#address">27,Alara Street Yaba 100012 Lagos State</a>
+          <a href="#address">27, Alara Street Yaba 100012 Lagos State</a>
         </li>
       </ul>
       <p className={`${classes.copyright} col-12 text-center`}>All rights reserved. &copy; getlinked Ltd.</p>

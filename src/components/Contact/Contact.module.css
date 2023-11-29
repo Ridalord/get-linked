@@ -1,5 +1,6 @@
 .regWrap {
   padding: 25vh 10vw 5vh;
+  position: relative;
 }
 .contactInfo{
   flex-direction: column;
@@ -56,4 +57,21 @@
 .button{
   width: fit-content;
   align-self: center;
+}
+
+
+@media (max-width: 767px) {
+  .contactInfo{
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+  }
+  .contactInfo>h1,
+  .contactInfo>p{
+    display: none !important;
+  }
+  .socialLinks{
+    width: 100vw;
+    align-items: center;
+  }
 }

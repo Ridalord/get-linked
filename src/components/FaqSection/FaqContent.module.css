@@ -3,6 +3,10 @@
   border-radius: 0 !important;
   border-bottom: 1px solid var(--secondary-color) !important;
   font-family: 'Monteserrat', sans-serif !important;
+  margin: 0 !important;
+}
+.accordionWrap div{
+  margin: 0 !important;
 }
 .faqImage{
   width: 55vw;
